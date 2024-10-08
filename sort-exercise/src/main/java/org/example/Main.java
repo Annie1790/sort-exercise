@@ -1,8 +1,6 @@
 package org.example;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Scanner;
 
 /*
 Measure the time taken to sort arrays of two different lengths (e.g. 10000 and 20000 integers) to observe the performance difference.
