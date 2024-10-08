@@ -40,7 +40,7 @@ public class SelectionSortTest {
     void sortFirstArray() {
         timer.startTimer();
         SelectionSort.sort(myArray1);
-        timer.endTimer();
+        timer.stopTimer();
 
         Assertions.assertNotEquals(timer.getExecutionTime(), 0L);
     }
@@ -49,7 +49,7 @@ public class SelectionSortTest {
     void sortSecondArray() {
         timer.startTimer();
         SelectionSort.sort(myArray2);
-        timer.endTimer();
+        timer.stopTimer();
 
         Assertions.assertNotEquals(timer.getExecutionTime(), 0L);
     }
@@ -61,12 +61,12 @@ public class SelectionSortTest {
 
         timerForTenK.startTimer();
         SelectionSort.sort(myArray1);
-        timerForTenK.endTimer();
+        timerForTenK.stopTimer();
         timerForTenK.printExecutionTime();
 
         timerForTwentyK.startTimer();
         SelectionSort.sort(myArray2);
-        timerForTwentyK.endTimer();
+        timerForTwentyK.stopTimer();
         timerForTwentyK.printExecutionTime();
 
         Assertions.assertTrue((timerForTenK.getExecutionTime()) < (timerForTwentyK.getExecutionTime()));

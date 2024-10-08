@@ -14,7 +14,7 @@ public class Timer {
         startTime = System.nanoTime();
     }
 
-    public void endTimer() {
+    public void stopTimer() {
         endTime = System.nanoTime();
     }
 
